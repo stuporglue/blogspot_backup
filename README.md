@@ -1,6 +1,8 @@
 # Blogspot Backup
 Some scripts to help backup a blogspot site.
 
+These are here more for my own backup purposes than for public consumption, but if they're useful, feel free to use them.
+
 It uses the site export, chops it into individual HTML files, downloads any images that are linked to (to get the largest size available) and downloads any youtube videos it finds embedded.
 
 These run on OSX with php, wget, tidy, file and youtube-dl installed
