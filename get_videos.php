@@ -16,7 +16,7 @@ foreach($doc->getElementsByTagName('iframe') as $link){
     $href = $link->getAttribute('src');
     if(strpos($href,'youtube')){
         $basename = basename($href);
-        $basename = preg_replace('|?.*|','',$basename);
+        $basename = preg_replace('|\?.*|','',$basename);
         if(!file_exists("$basename.mp4")){
             shell_exec("youtube-dl -f mp4 -o \"$basename.mp4\" \"$href\"");
         }
